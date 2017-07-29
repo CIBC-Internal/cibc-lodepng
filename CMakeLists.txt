@@ -6,3 +6,5 @@ set (Sources
   )
 
 add_library(lodepng ${Sources})
+
+SET(SCI_LODEPNG_LIBRARY lodepng CACHE INTERNAL "Lodepng library name." FORCE)
