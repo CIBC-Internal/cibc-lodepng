@@ -7,4 +7,4 @@ set (Sources
 
 add_library(lodepng STATIC ${Sources})
 
-SET(SCI_LODEPNG_LIBRARY lodepng CACHE INTERNAL "Lodepng library name." FORCE)
+SET(SCI_LODEPNG_LIBRARY lodepng CACHE INTERNAL "Lodepng library name.")
