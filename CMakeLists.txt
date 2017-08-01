@@ -5,6 +5,5 @@ set (Sources
   lodepng/lodepng.h
   )
 
-add_library(lodepng STATIC ${Sources})
-
 SET(SCI_LODEPNG_LIBRARY lodepng CACHE INTERNAL "Lodepng library name.")
+add_library(${SCI_LODEPNG_LIBRARY} STATIC ${Sources})
