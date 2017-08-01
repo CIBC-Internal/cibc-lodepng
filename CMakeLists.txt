@@ -6,4 +6,5 @@ set (Sources
   )
 
 SET(SCI_LODEPNG_LIBRARY lodepng CACHE INTERNAL "Lodepng library name.")
+MESSAGE("lodepng: " ${SCI_LODEPNG_LIBRARY})
 add_library(${SCI_LODEPNG_LIBRARY} STATIC ${Sources})
