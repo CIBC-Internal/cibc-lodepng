@@ -8,6 +8,7 @@ set (Sources
 SET(SCI_LODEPNG_LIBRARY lodepng CACHE INTERNAL "Lodepng library name.")
 MESSAGE("lodepng: " ${SCI_LODEPNG_LIBRARY})
 add_library(${SCI_LODEPNG_LIBRARY} STATIC ${Sources})
+set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -stdlib=libc++")
 
 SET(SCI_LODEPNG_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}" CACHE INTERNAL "LODEPNG include directories.")
 
